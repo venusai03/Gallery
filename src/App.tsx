@@ -10,9 +10,9 @@ import {
     setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { images, square, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
+import Photos from './pages/Photos';
 import Tab3 from './pages/Tab3';
 
 /* Core CSS required for Ionic components to work properly */
@@ -44,8 +44,8 @@ const App: React.FC = () => (
                     <Route exact path="/tab1">
                         <Tab1 />
                     </Route>
-                    <Route exact path="/tab2">
-                        <Tab2 />
+                    <Route exact path="/photos">
+                        <Photos />
                     </Route>
                     <Route path="/tab3">
                         <Tab3 />
@@ -59,9 +59,9 @@ const App: React.FC = () => (
                         <IonIcon aria-hidden="true" icon={triangle} />
                         <IonLabel>Tab 1</IonLabel>
                     </IonTabButton>
-                    <IonTabButton tab="tab2" href="/tab2">
-                        <IonIcon aria-hidden="true" icon={ellipse} />
-                        <IonLabel>Tab 2</IonLabel>
+                    <IonTabButton tab="photos" href="/photos">
+                        <IonIcon aria-hidden="true" icon={images} />
+                        <IonLabel>Photos</IonLabel>
                     </IonTabButton>
                     <IonTabButton tab="tab3" href="/tab3">
                         <IonIcon aria-hidden="true" icon={square} />
